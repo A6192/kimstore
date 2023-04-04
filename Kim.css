@@ -1,0 +1,218 @@
+/**css reset**/
+
+body {
+    margin: o;
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.Header {
+    width: 100%;
+    float: left;
+}
+
+.Header img {
+    width: 100%;
+}
+
+.Content-Wrapper {
+    background-color: #e5e5e5;
+    min-height: 470px;
+    width: 100%;
+    float: left;
+    padding: 30px;
+}
+
+.Content-Wrapper .Container {
+    width: 100%;
+    float: left;
+    border: 1px solid gray;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.Content-Wrapper .Nav {
+    width: 20%;
+    float: left;
+    padding: 20px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.Content-Wrapper .Nav a {
+    background-color: #047dc3;
+    border-radius: 4px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 12px 15px;
+    color: #ffffff;
+    margin: 10px;
+}
+
+.Content-Wrapper .Nav a .Active {
+    color: #ffffff;
+    background-color: #Fbaeae;
+    border: 1px solid #cc6868;
+}
+
+.Content-Wrapper .Content {
+    float: left;
+    width: 80%;
+    background-color: #ffffff;
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-left: 1px solid gray;
+    border-radius: 0px 5px 5px 0px;
+    min-height: 600px;
+}
+
+.Content-Wrapper .Content .Heading {
+    background-color: #ffb2b2;
+    font-size: 25px;
+    padding: 10px 15px;
+    margin: 20px 10px 10px;
+    border-radius: 4px;
+    border: 1px solid #cc6868;
+}
+
+.heading-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.Content-Wrapper .Content p {
+    font-size: 16px;
+    color: #000000;
+    line-height: 24px;
+    margin: 0px 0px 15px;
+}
+
+.Content-Wrapper .Content .Knits .Box {
+    width: calc(33.33% - 30px);
+    float: left;
+    box-shadow: 0px 0px 10px #dfdfdf;
+    height: 350px;
+    margin: 15px 14px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.Content-Wrapper .Content .Knits .Box img {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    position: absolute;
+    display: inline-block;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.Content-Wrapper .Content .Knits .Box .Price {
+    background-color: #047dc3;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.Content-Wrapper .Content .Knits .Box .Buy {
+    background-color: #ffb2b2;
+    padding: 10px 20px;
+    color: #000000;
+    font-size: 16px;
+    position: absolute;
+    right: 180px;
+    top: 310px;
+    z-index: 10;
+    text-decoration: none;
+}
+
+.Content-Wrapper .Content .feedback-Form {
+    width: 100%;
+    float: left;
+    border-top: 1px solid #c5c4c4;
+    padding-top: 20px;
+}
+
+.Content-Wrapper .Content .feedback-Form Form {
+    float: left;
+    width: 50%;
+    /* border: 1px solid #c5c4c4; */
+}
+
+.Content-Wrapper .Content .feedback-Form Form .row {
+    width: 100%;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.Content-Wrapper .Content .feedback-Form form .row .label{
+    width: 30%;
+    float: left;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    /* display: block; */
+}
+
+.Content-Wrapper .Content .feedback-Form form .row .input {
+    width: 70%;
+    float: right;
+}
+
+.Content-Wrapper .Content .feedback-Form form .row .input .Form-control {
+     width: 100%;
+     height: 40px;
+     border-radius: 4px;
+     border: 1px solid #c5c4c4;
+     padding: 6px 12px;
+}
+
+.Content-Wrapper .Content .feedback-Form form .row .input .textarea .Form-control{
+    height: 100px;
+}
+
+.Content-Wrapper .Content .feedback-Form form .row .input .btn {
+    color: black;
+    background-color: #Fbaeae;
+    border: 1px solid #cc6868;
+    border-radius: 4px;
+    height: 40px;
+    padding: 0px 30px;
+    font-size: 16px;
+}
+
+.Footer {
+    background-color: #047dc3;
+    padding: 50px 30px;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.Footer h5 {
+    color: #d8d8d8;
+    font-size: 16px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Footer p {
+    color: #ffffff;
+    margin: 10px;
+}
+
+/* Responsive */

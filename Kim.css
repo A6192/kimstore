@@ -9,13 +9,69 @@ body {
     box-sizing: border-box;
 }
 
-.Header {
-    width: 100%;
-    float: left;
+.header {
+    background: radial-gradient(#fff,#ffd6d6);
+    height: 20rem;
 }
 
-.Header img {
+.header-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    flex-basis: 20%;
+}
+
+.logo img {
     width: 100%;
+}
+
+.nav-list {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #cc6868;
+}
+
+
+.btn {
+    background-color: #ffd6d6;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    color: #cc6868;
+}
+
+.header-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-info {
+    flex-basis: 20%;
+}
+
+.header-info img {
+    width: 70%;
 }
 
 .Content-Wrapper {
@@ -101,6 +157,11 @@ body {
     position: relative;
 }
 
+.title {
+    font-family: serif;
+    font-size: 300px;
+}
+
 .Content-Wrapper .Content .Knits .Box img {
     max-width: 100%;
     max-height: 100%;
@@ -134,7 +195,7 @@ body {
     color: #000000;
     font-size: 16px;
     position: absolute;
-    right: 180px;
+    left: 0px;
     top: 310px;
     z-index: 10;
     text-decoration: none;
@@ -193,6 +254,18 @@ body {
     height: 40px;
     padding: 0px 30px;
     font-size: 16px;
+    cursor: pointer;
+}
+
+.btn1 {
+    color: black;
+    background-color: #Fbaeae;
+    border: 1px solid #cc6868;
+    border-radius: 4px;
+    height: 40px;
+    padding: 0px 30px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .Footer {
@@ -216,3 +289,43 @@ body {
 }
 
 /* Responsive */
+
+/* if width is equal to  or less than 991 then */
+
+@media(max-width: 991px){
+    .Content-Wrapper .Content .Knits .Box{
+        height: 350px;
+    }
+    .Content-Wrapper .Content .feedback-Form form{
+        width: 70%;
+    }
+}
+
+/* if width is equal to or less than 991 then */
+
+
+@media(max-width: 767px){
+    .Content-Wrapper .Nav{
+        width: 100%;
+    }
+    .Content-Wrapper .Content{
+        width: 100%;
+        border-radius: 0px 0px 5px 5px;
+    }
+    .Content-Wrapper .Content .Knits .Box{
+        width: 100%;
+        margin: 15px 0px;
+    }
+    .Content-Wrapper .Content .feedback-Form form{
+        width: 100%;
+    }
+}
+
+@media(max-width: 500px){
+    .Content-Wrapper .Content .feedback-Form form .row .label{
+        width: 100%;
+    }
+    .Content-Wrapper .Content .feedback-Form form .row .input{
+        width: 100%;
+    }
+}
